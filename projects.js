@@ -18,4 +18,15 @@ export const projects = [
     liveURL: './qr-code-component-main',
     repoURL: repoRootURL.concat('/qr-code-component-main'),
   },
+  {
+    id: 'age-calculator-app-main',
+    techs: ['HTML', 'TailwindCSS'],
+    image: isDev
+      ? './age-calculator-app-main/design/desktop-design.jpg'
+      : repoRawContent.concat(
+          '/age-calculator-app-main/design/desktop-design.jpg',
+        ),
+    liveURL: './age-calculator-app-main',
+    repoURL: repoRootURL.concat('/age-calculator-app-main'),
+  },
 ];

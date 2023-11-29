@@ -14,7 +14,7 @@ export function ProjectCard({ title, image, liveURL, repoURL }: Props) {
     <li class="rounded-md  bg-white shadow-xl">
       <h3 class="pt-4 text-center font-bold capitalize">{title}</h3>
 
-      <div class="p-4">
+      <div class="flex justify-center p-4">
         {showUnknown() ? (
           <div class="flex h-44 w-full items-center rounded-lg bg-white text-center">
             <span class="w-full whitespace-pre text-3xl font-medium">

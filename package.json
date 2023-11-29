@@ -28,7 +28,8 @@
     "vite-plugin-solid": "^2.7.2"
   },
   "workspaces": [
-    "qr-code-component-main"
+    "qr-code-component-main",
+    "age-calculator-app-main"
   ],
   "repository": {
     "type": "git",
