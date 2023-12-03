@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABO1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////l9Pff8fS54ein2eOn2eL9/v684unr9vj7/f7c8PSl2eKHzNil2OLv+Prz+vue1eB3xdOq2uPm9Pf29/vy8/n3/Py13+eEyteZ097P6u/2+/zByeKOm8r8/f7u+Pq+4+qOz9uU0dzo9fjb4O5meLbh5fH0+vvV7fHx+fv8/P2Gk8Wbps+44eim2eLW2+xkdrXO1Oit3OWttthperja3u7u+Pn6+/2hrNJneLfFy+P7+/23v92IlcbN0ufx8/nj5/Kbp9BsfbltfrqAj8ORnsvg5PD+/v/v8ffQ1em0vduqtNfn6vS/61TcAAAAHHRSTlMAAAQqbK3Z8v0DN5ff+xqJ6jbC/kHBAjjp3qz8qSKHsgAAAAFiS0dEAf8CLd4AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfiChMPAx5FOtlkAAABSUlEQVQ4y4WTZ2OCMBCGc4IMEXAPjB10771t7dLuXbv3/v+/oNigIYjN+4HcJU9CcgMhVxASxLAkK4oshUUhBIgVqBEtqmNXelSLqF4EwDBjmFHMNADoejyRxD4lE/EGAZCScICkFCGc/YHrDkHOACON2yhtOABkTNxWZgYQZHPeqWKH18tlAakas6ezi3E1FQl5Fuhm3LyARD0AsIs9vSSmIrJwC9DXPzA4NEx8C0ktwMjo2PiE3YgFkokxOdUEpmdm5+YXXEBGCjEWl5bpHVZKq2tlMq+gAjHWNza9r9jarpD5QuMX1Z3dv3Fvn72T3LzkweFRfSgd+xJGn3lyeuZ8K+csYNFAXVzWrqr+bDmBoqG+vqnd3t3bDOCE2push8en55fXNzZZTLrfPz6/vn+oX083t2C4JccvWm7Z8xuH33r85v2v/X8Bp/FiyVLnL/0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMTAtMTlUMTU6MDM6MzArMDI6MDCzEaEaAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTEwLTE5VDE1OjAzOjMwKzAyOjAwwkwZpgAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg=="
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    
+    <script type="module" crossorigin src="/frontendmentor-challenges/interactive-rating-component-main/assets/index-7236b889.js"></script>
+    <link rel="stylesheet" href="/frontendmentor-challenges/interactive-rating-component-main/assets/index-bd55a1b0.css">
+  </head>
+
+  <body
+    class="flex h-screen items-center justify-center bg-neutral-900 text-white"
+  >
+    <main
+      class="mx-4 max-w-xs rounded-2xl bg-gradient-to-b from-gray-800 to-gray-900 px-5 py-6 sm:mx-0"
+    >
+      <div
+        class="flex flex-col gap-4 data-[submitted=true]:hidden"
+        id="selectStarStep"
+      >
+        <div class="w-fit rounded-full bg-gray-700 px-3 py-3">
+          <img class="w-4" src="/frontendmentor-challenges/interactive-rating-component-main/assets/icon-star-3e70bfda.svg" alt="star icon" />
+        </div>
+
+        <h1 class="text-2xl font-bold">How did we do?</h1>
+
+        <p class="text-sm text-gray-400">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <div class="flex w-full justify-between gap-2" id="numbersContainer">
+          <button
+            class="h-10 w-10 rounded-full bg-gray-700 pt-1 text-gray-400 hover:bg-orange-500 hover:text-white data-[selected=true]:bg-slate-500 data-[selected=true]:text-white"
+            type="button"
+            value="1"
+          >
+            1
+          </button>
+          <button
+            class="h-10 w-10 rounded-full bg-gray-700 pt-1 text-gray-400 hover:bg-orange-500 hover:text-white data-[selected=true]:bg-slate-500 data-[selected=true]:text-white"
+            type="button"
+            value="2"
+          >
+            2
+          </button>
+          <button
+            class="h-10 w-10 rounded-full bg-gray-700 pt-1 text-gray-400 hover:bg-orange-500 hover:text-white data-[selected=true]:bg-slate-500 data-[selected=true]:text-white"
+            type="button"
+            value="3"
+          >
+            3
+          </button>
+          <button
+            class="h-10 w-10 rounded-full bg-gray-700 pt-1 text-gray-400 hover:bg-orange-500 hover:text-white data-[selected=true]:bg-slate-500 data-[selected=true]:text-white"
+            type="button"
+            value="4"
+          >
+            4
+          </button>
+          <button
+            class="h-10 w-10 rounded-full bg-gray-700 pt-1 text-gray-400 hover:bg-orange-500 hover:text-white data-[selected=true]:bg-slate-500 data-[selected=true]:text-white"
+            type="button"
+            value="5"
+          >
+            5
+          </button>
+        </div>
+
+        <button
+          class="w-full rounded-full bg-orange-500 py-2 pt-3 text-center text-sm font-bold uppercase tracking-widest text-white hover:bg-white hover:text-orange-500"
+          type="button"
+          id="submitBtn"
+        >
+          Submit
+        </button>
+      </div>
+
+      <div
+        class="hidden flex-col items-center gap-6 data-[submitted=true]:flex"
+        id="thankYouStep"
+      >
+        <img
+          src="/frontendmentor-challenges/interactive-rating-component-main/assets/illustration-thank-you-a52834b7.svg"
+          alt="Thank you illustration"
+        />
+
+        <span
+          class="rounded-full bg-gray-700 px-3 py-1 pt-2 text-sm text-orange-500"
+          id="submittedStarText"
+          >You selected X out of 5</span
+        >
+
+        <h2 class="text-2xl">Thank you!</h2>
+
+        <p class="-mt-4 text-center text-sm text-gray-400">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+    </main>
+  </body>
+
+  
+</html>
