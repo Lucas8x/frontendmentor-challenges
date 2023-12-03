@@ -11,7 +11,7 @@ export function ProjectCard({ title, image, liveURL, repoURL }: Props) {
   const [showUnknown, setShowUnknown] = createSignal(!image);
 
   return (
-    <li class="rounded-md  bg-white shadow-xl">
+    <li class="w-full rounded-md bg-white shadow-xl">
       <h3 class="pt-4 text-center font-bold capitalize">{title}</h3>
 
       <div class="flex justify-center p-4">

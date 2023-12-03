@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+
+  <body
+    class="flex h-screen items-center justify-center bg-neutral-900 text-white"
+  >
+    <main
+      class="mx-4 max-w-xs rounded-2xl bg-gradient-to-b from-gray-800 to-gray-900 px-5 py-6 sm:mx-0"
+    >
+      <div
+        class="flex flex-col gap-4 data-[submitted=true]:hidden"
+        id="selectStarStep"
+      >
+        <div class="w-fit rounded-full bg-gray-700 px-3 py-3">
+          <img class="w-4" src="./images/icon-star.svg" alt="star icon" />
+        </div>
+
+        <h1 class="text-2xl font-bold">How did we do?</h1>
+
+        <p class="text-sm text-gray-400">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <div class="flex w-full justify-between gap-2" id="numbersContainer">
+          <button
+            class="h-10 w-10 rounded-full bg-gray-700 pt-1 text-gray-400 hover:bg-orange-500 hover:text-white data-[selected=true]:bg-slate-500 data-[selected=true]:text-white"
+            type="button"
+            value="1"
+          >
+            1
+          </button>
+          <button
+            class="h-10 w-10 rounded-full bg-gray-700 pt-1 text-gray-400 hover:bg-orange-500 hover:text-white data-[selected=true]:bg-slate-500 data-[selected=true]:text-white"
+            type="button"
+            value="2"
+          >
+            2
+          </button>
+          <button
+            class="h-10 w-10 rounded-full bg-gray-700 pt-1 text-gray-400 hover:bg-orange-500 hover:text-white data-[selected=true]:bg-slate-500 data-[selected=true]:text-white"
+            type="button"
+            value="3"
+          >
+            3
+          </button>
+          <button
+            class="h-10 w-10 rounded-full bg-gray-700 pt-1 text-gray-400 hover:bg-orange-500 hover:text-white data-[selected=true]:bg-slate-500 data-[selected=true]:text-white"
+            type="button"
+            value="4"
+          >
+            4
+          </button>
+          <button
+            class="h-10 w-10 rounded-full bg-gray-700 pt-1 text-gray-400 hover:bg-orange-500 hover:text-white data-[selected=true]:bg-slate-500 data-[selected=true]:text-white"
+            type="button"
+            value="5"
+          >
+            5
+          </button>
+        </div>
+
+        <button
+          class="w-full rounded-full bg-orange-500 py-2 pt-3 text-center text-sm font-bold uppercase tracking-widest text-white hover:bg-white hover:text-orange-500"
+          type="button"
+          id="submitBtn"
+        >
+          Submit
+        </button>
+      </div>
+
+      <div
+        class="hidden flex-col items-center gap-6 data-[submitted=true]:flex"
+        id="thankYouStep"
+      >
+        <img
+          src="./images/illustration-thank-you.svg"
+          alt="Thank you illustration"
+        />
+
+        <span
+          class="rounded-full bg-gray-700 px-3 py-1 pt-2 text-sm text-orange-500"
+          id="submittedStarText"
+          >You selected X out of 5</span
+        >
+
+        <h2 class="text-2xl">Thank you!</h2>
+
+        <p class="-mt-4 text-center text-sm text-gray-400">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+    </main>
+  </body>
+
+  <script src="./main.js" type="module"></script>
+</html>

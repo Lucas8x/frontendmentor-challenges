@@ -29,4 +29,15 @@ export const projects = [
     liveURL: './age-calculator-app-main',
     repoURL: repoRootURL.concat('/age-calculator-app-main'),
   },
+  {
+    id: 'interactive-rating-component-main',
+    techs: ['HTML', 'TailwindCSS'],
+    image: isDev
+      ? './interactive-rating-component-main/design/desktop-design.jpg'
+      : repoRawContent.concat(
+          '/interactive-rating-component-main/design/desktop-design.jpg',
+        ),
+    liveURL: './interactive-rating-component-main',
+    repoURL: repoRootURL.concat('/interactive-rating-component-main'),
+  },
 ];
