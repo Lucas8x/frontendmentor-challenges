@@ -11,7 +11,7 @@ export default function App() {
       <ul class="mt-8 grid gap-4 md:grid-cols-2" id="projectList">
         {projects.map((i) => (
           <ProjectCard
-            title={i.id.split('-').join(' ')}
+            title={i.id.split('-').join(' ').replace('main', '').trim()}
             image={i.image}
             liveURL={i.liveURL}
             repoURL={i.repoURL}

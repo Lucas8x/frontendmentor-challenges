@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Advice generator app</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+
+  <body class="flex h-screen items-center justify-center bg-gray-800">
+    <div
+      class="mx-4 flex max-w-md flex-col items-center rounded-lg bg-gray-700 px-4 pt-6"
+    >
+      <main class="flex flex-col gap-4 text-center">
+        <span
+          class="text-sm font-semibold tracking-widest text-emerald-400"
+          id="adviceNumber"
+          >ADVICE #000</span
+        >
+
+        <span class="text-xl font-extrabold text-slate-300" id="adviceText"
+          >...</span
+        >
+
+        <div class="flex justify-center">
+          <img
+            class="sm:hidden"
+            src="./images/pattern-divider-mobile.svg"
+            alt=""
+          />
+          <img
+            class="hidden sm:block"
+            src="./images/pattern-divider-desktop.svg"
+            alt=""
+          />
+        </div>
+      </main>
+
+      <button
+        class="hover:drop-shadow-glow group relative top-7 rounded-full bg-emerald-400 p-4 hover:bg-emerald-300"
+        type="button"
+        id="diceButton"
+        data-fetching="false"
+      >
+        <img
+          class="group-data-[fetching=true]:animate-spin"
+          src="./images/icon-dice.svg"
+          alt="Get new advice"
+        />
+      </button>
+    </div>
+  </body>
+
+  <script src="./main.js" type="module"></script>
+</html>

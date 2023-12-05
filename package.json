@@ -30,7 +30,8 @@
   "workspaces": [
     "qr-code-component-main",
     "age-calculator-app-main",
-    "interactive-rating-component-main"
+    "interactive-rating-component-main",
+    "advice-generator-app-main"
   ],
   "repository": {
     "type": "git",

@@ -40,4 +40,15 @@ export const projects = [
     liveURL: './interactive-rating-component-main',
     repoURL: repoRootURL.concat('/interactive-rating-component-main'),
   },
+  {
+    id: 'advice-generator-app-main',
+    techs: ['HTML', 'TailwindCSS'],
+    image: isDev
+      ? './advice-generator-app-main/design/desktop-design.jpg'
+      : repoRawContent.concat(
+          '/advice-generator-app-main/design/desktop-design.jpg',
+        ),
+    liveURL: './advice-generator-app-main',
+    repoURL: repoRootURL.concat('/advice-generator-app-main'),
+  },
 ];
