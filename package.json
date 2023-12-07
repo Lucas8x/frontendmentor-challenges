@@ -31,7 +31,8 @@
     "qr-code-component-main",
     "age-calculator-app-main",
     "interactive-rating-component-main",
-    "advice-generator-app-main"
+    "advice-generator-app-main",
+    "order-summary-component-main"
   ],
   "repository": {
     "type": "git",

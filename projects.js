@@ -51,4 +51,15 @@ export const projects = [
     liveURL: './advice-generator-app-main',
     repoURL: repoRootURL.concat('/advice-generator-app-main'),
   },
+  {
+    id: 'order-summary-component-main',
+    techs: ['HTML', 'TailwindCSS'],
+    image: isDev
+      ? './order-summary-component-main/design/desktop-design.jpg'
+      : repoRawContent.concat(
+          '/order-summary-component-main/design/desktop-design.jpg',
+        ),
+    liveURL: './order-summary-component-main',
+    repoURL: repoRootURL.concat('/order-summary-component-main'),
+  },
 ];
