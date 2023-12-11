@@ -62,4 +62,13 @@ export const projects = [
     liveURL: './order-summary-component-main',
     repoURL: repoRootURL.concat('/order-summary-component-main'),
   },
+  {
+    id: 'faq-accordion-main',
+    techs: ['HTML', 'TailwindCSS'],
+    image: isDev
+      ? './faq-accordion-main/design/desktop-design.jpg'
+      : repoRawContent.concat('/faq-accordion-main/design/desktop-design.jpg'),
+    liveURL: './faq-accordion-main',
+    repoURL: repoRootURL.concat('/faq-accordion-main'),
+  },
 ];

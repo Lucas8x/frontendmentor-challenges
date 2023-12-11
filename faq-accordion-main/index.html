@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | FAQ accordion</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+
+  <body
+    class="flex h-screen flex-col items-center justify-center bg-fuchsia-100 bg-[url('/assets/background-pattern-mobile.svg')] bg-contain bg-no-repeat p-4 md:bg-[url('/assets/background-pattern-desktop.svg')]"
+  >
+    <main
+      class="w-full max-w-sm overflow-y-auto rounded-lg bg-white px-6 py-8 md:max-w-lg md:rounded-2xl md:px-8"
+    >
+      <div class="flex items-center gap-4">
+        <img
+          class="h-6 w-auto md:h-8"
+          src="./assets/icon-star.svg"
+          alt="Star"
+        />
+        <h3 class="text-3xl font-bold text-purple-950 md:text-4xl">FAQs</h3>
+      </div>
+
+      <div class="mt-4 flex flex-col divide-y divide-slate-200">
+        <details class="group flex py-6">
+          <summary
+            class="flex cursor-pointer list-none flex-row-reverse items-center justify-between gap-4 font-semibold text-purple-950 before:inline-flex before:aspect-square before:h-6 before:w-6 before:items-center before:justify-center before:rounded-full before:bg-purple-600 before:text-white before:content-['+'] hover:text-purple-500 group-open:before:bg-purple-950 group-open:before:content-['-']"
+          >
+            What is Frontend Mentor, and how will it help me?
+          </summary>
+          <span class="mt-4">
+            Frontend Mentor offers realistic coding challenges to help
+            developers improve their frontend coding skills with projects in
+            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+            for portfolio building.
+          </span>
+        </details>
+
+        <details class="group flex py-6">
+          <summary
+            class="flex cursor-pointer list-none flex-row-reverse items-center justify-between gap-4 font-semibold text-purple-950 before:inline-flex before:aspect-square before:h-6 before:w-6 before:items-center before:justify-center before:rounded-full before:bg-purple-600 before:text-white before:content-['+'] hover:text-purple-500 group-open:before:bg-purple-950 group-open:before:content-['-']"
+          >
+            Is Frontend Mentor free?
+          </summary>
+          <span class="mt-4">
+            Yes, Frontend Mentor offers both free and premium coding challenges,
+            with the free option providing access to a range of projects
+            suitable for all skill levels.
+          </span>
+        </details>
+
+        <details class="group flex py-6">
+          <summary
+            class="flex cursor-pointer list-none flex-row-reverse items-center justify-between gap-4 font-semibold text-purple-950 before:inline-flex before:aspect-square before:h-6 before:w-6 before:items-center before:justify-center before:rounded-full before:bg-purple-600 before:text-white before:content-['+'] hover:text-purple-500 group-open:before:bg-purple-950 group-open:before:content-['-']"
+          >
+            Can I use Frontend Mentor projects in my portfolio?
+          </summary>
+          <span class="mt-4">
+            Yes, you can use projects completed on Frontend Mentor in your
+            portfolio. It's an excellent way to showcase your skills to
+            potential employers!
+          </span>
+        </details>
+
+        <details class="group flex py-6">
+          <summary
+            class="flex cursor-pointer list-none flex-row-reverse items-center justify-between gap-4 font-semibold text-purple-950 before:inline-flex before:aspect-square before:h-6 before:w-6 before:items-center before:justify-center before:rounded-full before:bg-purple-600 before:text-white before:content-['+'] hover:text-purple-500 group-open:before:bg-purple-950 group-open:before:content-['-']"
+          >
+            How can I get help if I'm stuck on a Frontend Mentor challenge?
+          </summary>
+          <span class="mt-4">
+            The best place to get help is inside Frontend Mentor's Discord
+            community. There's a help channel where you can ask questions and
+            seek support from other community members.
+          </span>
+        </details>
+      </div>
+    </main>
+  </body>
+</html>

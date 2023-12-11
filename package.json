@@ -32,7 +32,8 @@
     "age-calculator-app-main",
     "interactive-rating-component-main",
     "advice-generator-app-main",
-    "order-summary-component-main"
+    "order-summary-component-main",
+    "faq-accordion-main"
   ],
   "repository": {
     "type": "git",
