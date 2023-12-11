@@ -15,7 +15,13 @@ try {
     .split('\n');
 
   const projectsTable = projects.map((p, i) => {
-    const name = p.id.split('-').join(' ').replace('main', '').trim();
+    const name = p.id
+      .replace('main', '')
+      .split('-')
+      .map((i) => i && i[0].toUpperCase() + i.substring(1))
+      .join(' ')
+      .trim();
+
     return `| ${i + 1}. [${name}](${new URL(
       p.liveURL,
       mainSite,
@@ -38,5 +44,5 @@ try {
 
   console.log('Successfully Updated README.');
 } catch (error) {
-  console.error("Couldn't Update README.");
+  console.error("Couldn't Update README.", error);
 }
