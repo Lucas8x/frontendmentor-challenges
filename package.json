@@ -6,6 +6,7 @@
   "homepage": "https://lucas8x.github.io/frontendmentor-challenges",
   "scripts": {
     "dev": "vite --open",
+    "updateReadme": "node ./updateReadme.js",
     "build": "vite build",
     "postbuild": "node ./buildProjects.js",
     "predeploy": "npm run build",
