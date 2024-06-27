@@ -18,11 +18,13 @@ function normalizeImgURL(imgPath) {
 
 export const projects = [
   {
-    id: 'qr-code-component-main',
+    id: 'advice-generator-app-main',
     techs: ['HTML', 'TailwindCSS'],
-    image: normalizeImgURL('/qr-code-component-main/design/desktop-design.jpg'),
-    liveURL: './qr-code-component-main',
-    repoURL: `${repoRootURL}/qr-code-component-main`,
+    image: normalizeImgURL(
+      '/advice-generator-app-main/design/desktop-design.jpg',
+    ),
+    liveURL: './advice-generator-app-main',
+    repoURL: `${repoRootURL}/advice-generator-app-main`,
   },
   {
     id: 'age-calculator-app-main',
@@ -34,6 +36,13 @@ export const projects = [
     repoURL: `${repoRootURL}/age-calculator-app-main`,
   },
   {
+    id: 'faq-accordion-main',
+    techs: ['HTML', 'TailwindCSS'],
+    image: normalizeImgURL('/faq-accordion-main/design/desktop-design.jpg'),
+    liveURL: './faq-accordion-main',
+    repoURL: `${repoRootURL}/faq-accordion-main`,
+  },
+  {
     id: 'interactive-rating-component-main',
     techs: ['HTML', 'TailwindCSS'],
     image: normalizeImgURL(
@@ -41,15 +50,6 @@ export const projects = [
     ),
     liveURL: './interactive-rating-component-main',
     repoURL: `${repoRootURL}/interactive-rating-component-main`,
-  },
-  {
-    id: 'advice-generator-app-main',
-    techs: ['HTML', 'TailwindCSS'],
-    image: normalizeImgURL(
-      '/advice-generator-app-main/design/desktop-design.jpg',
-    ),
-    liveURL: './advice-generator-app-main',
-    repoURL: `${repoRootURL}/advice-generator-app-main`,
   },
   {
     id: 'order-summary-component-main',
@@ -61,10 +61,19 @@ export const projects = [
     repoURL: `${repoRootURL}/order-summary-component-main`,
   },
   {
-    id: 'faq-accordion-main',
+    id: 'qr-code-component-main',
     techs: ['HTML', 'TailwindCSS'],
-    image: normalizeImgURL('/faq-accordion-main/design/desktop-design.jpg'),
-    liveURL: './faq-accordion-main',
-    repoURL: `${repoRootURL}/faq-accordion-main`,
+    image: normalizeImgURL('/qr-code-component-main/design/desktop-design.jpg'),
+    liveURL: './qr-code-component-main',
+    repoURL: `${repoRootURL}/qr-code-component-main`,
+  },
+  {
+    id: 'social-links-profile-main',
+    techs: ['HTML', 'TailwindCSS'],
+    image: normalizeImgURL(
+      '/social-links-profile-main/design/desktop-design.jpg',
+    ),
+    liveURL: './social-links-profile-main',
+    repoURL: `${repoRootURL}/social-links-profile-main`,
   },
 ];
